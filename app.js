@@ -31,3 +31,18 @@ function correctSentence(text) {
 console.log(correctSentence('once there was a kitty cat'));
 
 ///////////////////////////////////////////////////////////////////////////////
+
+// Challenge 3
+// Find and return the first word in a string
+// String might contain full stops, spaces, ascii characters etc.
+
+function firstWord(a, b) {
+  // Find the first word in a given text using RegExp match() method.
+  var word = a.match(/[A-Za-z']+/)[0];
+
+  return word;
+}
+
+console.log(firstWord('... and so on ...'));
+
+///////////////////////////////////////////////////////////////////////////////
